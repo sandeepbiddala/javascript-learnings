@@ -10,6 +10,6 @@ function fibonacci (n){
     return fibonacciNumber;
 }
 
-for( i=0;i<=5;i++){
+for( i=0;i<=10;i++){
     console.log(fibonacci(i));
 }
