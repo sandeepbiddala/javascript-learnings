@@ -9,7 +9,13 @@ function fibonacci (n){
     }
     return fibonacciNumber;
 }
-
-for( i=0;i<=10;i++){
-    console.log(fibonacci(i));
+let addfib =0;
+const fibArray = {};
+for( i=0;i<=5;i++){
+    const fibnumber = fibonacci(i);
+    addfib = addfib + fibnumber;
+    fibArray[i+1] = fibnumber;
+    console.log(fibnumber);
 }
+console.log('Sum of fibonacci:', addfib);
+console.log('Fib number position:', fibArray[4]);
